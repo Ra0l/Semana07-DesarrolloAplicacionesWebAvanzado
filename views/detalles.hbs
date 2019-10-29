@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Detalle de pago</title>
+</head>
+<body>
+    {{> navbar }}
+    <div class="container">
+        <br>
+        <h2>Detalles</h2>
+        <br>
+        {{!-- <p>Estos son los datos que acabas de enviarnos:</p> --}}
+        <p style="color: royalblue"><strong style="color: black">Curso:</strong> {{curso}}</p>
+        <p style="color: royalblue"><strong style="color: black">Módulos:</strong> {{modulo}}</p>
+        <p style="color: royalblue"><strong style="color: black">Método de pago:</strong> {{pago}}</p>
+
+        <br>
+
+        <p><strong>Costo inicial: </strong>{{costo}}</p>
+        <p style="color: red"><strong style="color: black">Descuento: </strong>{{descuento}}%</p>
+        <p><strong>Costo final: </strong>{{costo_final}}</p>
+    </div>
+
+
+</body>
+</html>
